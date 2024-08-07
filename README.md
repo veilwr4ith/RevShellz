@@ -12,47 +12,49 @@
 Copy-paste this into your terminal:
 
 ```sh
-git clone https://github.com/mkdirlove/RevShellz.git
+git clone https://github.com/veilwr4ith/RevShellz
 ```
 ```
 cd RevShellz
 ```
 ```
-python3 revshellz.py
+python3 revshellz2.0.py
 ```
 or
 ```
-python3 revshellz.py -h
+python3 revshellz2.0.py -h
 ```
 #### Usage
 ``` 
-░█▀▄░█▀▀░█░█░█▀▀░█░█░█▀▀░█░░░█░░░▀▀█
-░█▀▄░█▀▀░▀▄▀░▀▀█░█▀█░█▀▀░█░░░█░░░▄▀░
-░▀░▀░▀▀▀░░▀░░▀▀▀░▀░▀░▀▀▀░▀▀▀░▀▀▀░▀▀▀
+   _ \                  ___|   |            |  |
+  |   |   _ \ \ \   / \___ \   __ \    _ \  |  | _  /
+  __ <    __/  \ \ /        |  | | |   __/  |  |   /
+ _| \_\ \___|   \_/   _____/  _| |_| \___| _| _| ___|v2.0
+                            mkdirlove & veilwr4ith
 
-     Made with ❤️  by @mkdirlove
+usage: revshellz2.0.py [-h] [-ip IPADDRESS] [-p PORT] [-os OPERATING_SYSTEM] [-pl PAYLOAD] [-l LIST] [-enc ENCODE]
 
-usage: revshellz.py [-h] [-ip IP_ADD] [-p PORT] [-os OPERATING_SYS] [-rs REV_SHELL] [-l LIST]
-
-RevShellz - Yet another reverse shell generator written in Python.
+RevShellz: Yet another reverse shell generator written in Python.
 
 options:
   -h, --help            show this help message and exit
-  -ip IP_ADD, --ip_add IP_ADD
-                        IP address
-  -p PORT, --port PORT  Port number
-  -os OPERATING_SYS, --operating_sys OPERATING_SYS
-                        Operating system
-  -rs REV_SHELL, --rev_shell REV_SHELL
-                        Reverse shell type
-  -l LIST, --list LIST  List available reverse shells by OS category
+  -ip IPADDRESS, --ipaddress IPADDRESS
+                        Target IP address
+  -p PORT, --port PORT  Target port number
+  -os OPERATING_SYSTEM, --operating-system OPERATING_SYSTEM
+                        Target operating system (linux, windows, macos)
+  -pl PAYLOAD, --payload PAYLOAD
+                        Payload for reverse shell
+  -l LIST, --list LIST  List available reverse shell payload types for the specified OS
+  -enc ENCODE, --encode ENCODE
+                        Encode the payload in Base64 or URL
 
 ```
 #### Example
 
 Listing reverse shells
 ```
-python3 revshellz.py -l linux, windows, macos
+python3 revshellz2.0.py -l linux, windows, macos
 ```
 
 #### Example
@@ -67,5 +69,9 @@ python3 revshellz.py -ip 10.10.10.1 -p 1337 -rs 'PowerShell #1' -os windows
 ```
 Generating reverse shell for MacOS
 ```
-python3 revshellz.py -ip 10.10.10.1 -p 1337 -rs 'nc mkfifo' -os linux
+python3 revshellz.py -ip 10.10.10.1 -p 1337 -rs 'nc mkfifo' -os macos
+```
+Generating reverse shell with Base64 Encoding
+```
+python3 revshellz.py -ip 10.10.10.1 -p 1337 -rs 'bash -i' -os linux -enc base64
 ```
