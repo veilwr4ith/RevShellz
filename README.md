@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://github.com/veilwr4ith/RevShellz2.0"><img src="https://github.com/veilwr4ith/RevShellz2.0/blob/main/logo2.0.png" alt="RevShellz
+  <a href="https://github.com/veilwr4ith/RevShellz2.0"><img src="https://github.com/veilwr4ith/RevShellz2.0/blob/main/banner.png" alt="RevShellz
 "></a>
   <br>
   Yet another reverse shell generator written in Python.
